@@ -234,17 +234,12 @@ public FunkcjaKwadratowa(){
 	panel2.setLayout(new GridLayout());
 	panel2.add(oblicz);
 	
-		/*JPanel panel3 = new JPanel();
-	panel3.setLayout(new GridLayout());
-	panel3.add(yy);
-	yy.setPreferredSize(new Dimension(750, 240));*/
-	
 	wynik.setBackground(Color.LIGHT_GRAY);	
 	wynik.setForeground(Color.BLACK);
 	wynik.setFont(new Font("Courier New", Font.BOLD, 15));	
 	
 	oblicz.setFont(new Font("Courier New", Font.BOLD, 24));
-	//zz.setForeground(Color.RED);
+	
 
 	JScrollPane scroll = new JScrollPane(wynik);
 	scroll.setPreferredSize(new Dimension(750, 270));
@@ -255,7 +250,6 @@ public FunkcjaKwadratowa(){
 	add(panell, BorderLayout.NORTH);
 	add(panel2, BorderLayout.CENTER);
 	add(scroll, BorderLayout.SOUTH);
-	//add(new JScrollPane(yy));
 	setPreferredSize(new Dimension(800, 555));
 	setLocation(100, 100);
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
