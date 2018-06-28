@@ -26,12 +26,12 @@ public class FunkcjaKwadratowa extends JFrame{
 	JLabel labelB = new JLabel("Podaj b:");
 	JLabel labelC = new JLabel("Podaj c:");
 
-	JTextArea wynik = new JTextArea(); // okno wyniku
+	JTextArea wynik = new JTextArea();
 	
 	JButton oblicz = new JButton("OBLICZ");
 	
-	JTextArea qpwo = new JTextArea(); // obiekt pomocniczy
-	JTextArea qpwo1 = new JTextArea(); //obiekt pomocniczy2
+	JTextArea help = new JTextArea(); // obiekt pomocniczy
+	JTextArea help2 = new JTextArea(); //obiekt pomocniczy2
 	
 	
 	
@@ -181,20 +181,20 @@ if  (a < 0)
 
 {
 
-	  qpwo1.setText("Ramiona paraboli skierowane w dol" + "\n" + "funkcja rosnaca dla XE (- nieskonczonosc;"+c+")" + "\n" + "funkcja malejaca dla XE ("+c+";+ nieskonczonosc)");
+	  help2.setText("Ramiona paraboli skierowane w dol" + "\n" + "funkcja rosnaca dla XE (- nieskonczonosc;"+c+")" + "\n" + "funkcja malejaca dla XE ("+c+";+ nieskonczonosc)");
 }
 
 if  (a > 0) 
 
 {
-    qpwo1.setText("Ramiona paraboli skierowane w gore" + "\n" + "funkcja malejaca dla XE (- nieskonczonosci;"+c+")" + "\n" + "funkcja rosnaca dla XE ("+c+";+ nieskonczonosci)");
-	//grr += "\n" + qpwo1.getText();
+    help2.setText("Ramiona paraboli skierowane w gore" + "\n" + "funkcja malejaca dla XE (- nieskonczonosci;"+c+")" + "\n" + "funkcja rosnaca dla XE ("+c+";+ nieskonczonosci)");
+	
 }
 	
 	
 String kla = qpwo1.getText();	
-	qpwo.setText("\n" + ogolnaWynik + "\n" + kanonicznaWynik + "\n" + pWynik + "\n" + qWynik + "\n" + deltaWynik + "\n" + wierzcholekWynik + "\n" + kla + "\n" + yWynik); 
-	tekstWynik += qpwo.getText();
+	help.setText("\n" + ogolnaWynik + "\n" + kanonicznaWynik + "\n" + pWynik + "\n" + qWynik + "\n" + deltaWynik + "\n" + wierzcholekWynik + "\n" + kla + "\n" + yWynik); 
+	tekstWynik += help.getText();
 	wynik.setText(tekstWynik);
 				
 
